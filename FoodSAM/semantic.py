@@ -1,10 +1,10 @@
 import sys
-sys.path.append('.')
-sys.path.append('./SAM')
-sys.path.append('./mmseg')
+# sys.path.append('.')
+# sys.path.append('./SAM')
+# sys.path.append('./mmseg')
 import argparse
 import cv2
-from SAM.segment_anything import SamAutomaticMaskGenerator, sam_model_registry
+from segment_anything import SamAutomaticMaskGenerator, sam_model_registry
 from mmcv.utils import DictAction
 import argparse
 import json
