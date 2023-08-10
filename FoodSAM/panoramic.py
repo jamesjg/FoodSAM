@@ -51,7 +51,7 @@ parser.add_argument(
 parser.add_argument(
     "--output",
     type=str,
-    default='FoodSAM/Panoramic_Results',
+    default='FoodSAM/Results/Panoramic_Results',
     help=(
         "Path to the directory where masks will be output. Output will be either a folder "
         "of PNGs per image."
@@ -60,11 +60,11 @@ parser.add_argument(
 parser.add_argument(
     "--SAM_checkpoint",
     type=str,
-    default="SAM/ckpts/sam_vit_h_4b8939.pth",
+    default="ckpts/sam_vit_h_4b8939.pth",
     help="The path to the SAM checkpoint to use for mask generation.",
 )
-parser.add_argument('--semantic_config', default="mmseg/ckpts/SETR_MLA/SETR_MLA_768x768_80k_base.py", help='test config file path of mmseg')
-parser.add_argument('--semantic_checkpoint', default="mmseg/ckpts/SETR_MLA/iter_80000.pth", help='checkpoint file of mmseg')
+parser.add_argument('--semantic_config', default="ckpts/SETR_MLA/SETR_MLA_768x768_80k_base.py", help='test config file path of mmseg')
+parser.add_argument('--semantic_checkpoint', default="ckpts/SETR_MLA/iter_80000.pth", help='checkpoint file of mmseg')
 parser.add_argument(
     "--model-type",
     type=str,
@@ -123,7 +123,7 @@ parser.add_argument(
 parser.add_argument(
     "--opts",
     help="Modify config options using the command-line 'KEY VALUE' pairs",
-    default=["MODEL.WEIGHTS", "UNIDET/ckpts/Unified_learned_OCIM_RS200_6x+2x.pth"] ,
+    default=["MODEL.WEIGHTS", "ckpts/Unified_learned_OCIM_RS200_6x+2x.pth"] ,
     nargs=argparse.REMAINDER,
 )
 

@@ -11,7 +11,8 @@ import tqdm
 import json
 import copy
 import sys
-sys.path.append('UNIDET/detectron2')
+sys.path.append('.')
+sys.path.append('./UNIDET/detectron2')
 # from detectron2.detectron2.utils.logger import setup_logger
 from detectron2.config import get_cfg
 from detectron2.data.detection_utils import read_image
