@@ -5,6 +5,8 @@ import tempfile
 import mmcv
 import torch
 import numpy as np
+import sys
+sys.path.append('.')
 from mmcv.image import tensor2imgs
 from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
 from mmcv.runner import load_checkpoint
