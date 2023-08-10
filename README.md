@@ -37,10 +37,9 @@ d. Install MMCV following the [official instructions](https://mmcv.readthedocs.i
 ```
 pip install mmcv-full==1.3.0 -f https://download.openmmlab.com/mmcv/dist/cu110/torch1.8.0/index.html
 ```
-e. Install SAM and detectron2, following official [SAM installation](https://github.com/facebookresearch/segment-anything) and [detectron2 installation](https://github.com/facebookresearch/detectron2/blob/main/INSTALL.md).
+e. Install SAM following official [SAM installation](https://github.com/facebookresearch/segment-anything).
 ```
 pip install git+https://github.com/facebookresearch/segment-anything.git
-python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 ```
 f. other requirements
 ```
