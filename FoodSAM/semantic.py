@@ -50,7 +50,7 @@ parser.add_argument(
 parser.add_argument(
     "--output",
     type=str,
-    default='temp/Semantic_Results',
+    default='FoodSAM/Results/Semantic_Results',
     help=(
         "Path to the directory where results will be output. Output will be a folder "
     ),
@@ -58,11 +58,11 @@ parser.add_argument(
 parser.add_argument(
     "--SAM_checkpoint",
     type=str,
-    default="SAM/ckpts/sam_vit_h_4b8939.pth",
+    default="ckpts/sam_vit_h_4b8939.pth",
     help="The path to the SAM checkpoint to use for mask generation.",
 )
-parser.add_argument('--semantic_config', default="mmseg/ckpts/SETR_MLA/SETR_MLA_768x768_80k_base.py", help='test config file path of mmseg')
-parser.add_argument('--semantic_checkpoint', default="mmseg/ckpts/SETR_MLA/iter_80000.pth", help='checkpoint file of mmseg')
+parser.add_argument('--semantic_config', default="ckpts/SETR_MLA/SETR_MLA_768x768_80k_base.py", help='test config file path of mmseg')
+parser.add_argument('--semantic_checkpoint', default="ckpts/SETR_MLA/iter_80000.pth", help='checkpoint file of mmseg')
 parser.add_argument(
     "--model-type",
     type=str,
@@ -264,7 +264,6 @@ def create_logger(save_folder):
     return logger
 
 def main(args: argparse.Namespace) -> None:
-    print(args)
     os.makedirs(args.output, exist_ok=True)
     logger = create_logger(args.output)
     logger.info("running sam!")
