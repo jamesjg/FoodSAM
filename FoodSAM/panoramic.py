@@ -305,7 +305,7 @@ def main(args: argparse.Namespace) -> None:
             logger.error(f"Could not load '{t}' as an image, skipping...")
             continue
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        masks, img_embeddings = generator.generate(image)
+        masks = generator.generate(image)
         base = os.path.basename(t)
         base = os.path.splitext(base)[0]
         save_base = os.path.join(args.output, base)
