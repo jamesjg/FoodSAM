@@ -22,7 +22,7 @@ Install FoodSAM:
 a. Clone the repository locally and install with
 
 ```
-git clone 
+git clone https://github.com/jamesjg/FoodSAM.git
 ```
 b. Create a conda virtual environment and activate it
 ```
