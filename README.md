@@ -1,7 +1,7 @@
 # FoodSAM
 
 
-This repository contains code for FoodSAm. The model can segment and recognize multiple food or non-food instances in a given image.
+This repository contains code for FoodSAM. The model can segment and recognize multiple food or non-food instances in a given image.
 
 [[`Paper`]()] 
 
@@ -15,11 +15,11 @@ Besides, we recognize that the ingredients in food can be supposed as independen
 
 ## Installation
 
-The code requires `python==3.7`, as well as `pytorch>=1.8` and. Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch dependencies. Installing PyTorch and TorchVision with CUDA support is strongly recommended.
+The code requires `python==3.7`, as well as `pytorch>=1.8`. Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch dependencies. Installing PyTorch and TorchVision with CUDA support is strongly recommended.
 
 Install FoodSAM:
 
-a. Clone the repository locally and install with
+a. Clone the repository locally:
 
 ```
 git clone https://github.com/jamesjg/FoodSAM.git
@@ -55,7 +55,7 @@ First download three checkpoints:
 
 [UNIDET-Unified_learned_OCIM_RS200_6x+2x](https://github.com/xingyizhou/UniDet/tree/master)
 
-for UNIDET and FoodSeg103, you also need download the related configs.
+for UNIDET and FoodSeg103, you also need to download the related configs.
 
 Then,  you can run the model for semantic segmentation in a few command lines, the panoramic and instance segmentation in FoodSAM/panoramic.py is similar
 ```
@@ -63,7 +63,7 @@ python FoodSAM/semantic.py --img_path <path/to/img> --output <path/to/output> --
 ```
 Masks can also be generated for a folder of images by setting `args.data_root and args.img_dir`. Furthermore, by setting `args.eval` to true, the model can output the semantic masks and evaluate the metrics. 
 
-Here are examples for semantic segmentation and instance segmentation on FoodSeg103 dataset:
+Here are examples of semantic segmentation and instance segmentation on the FoodSeg103 dataset:
 ```
 python FoodSAM/semantic.py --data_root dataset/FoodSeg103/Images --img_dir img_dir/test --ann_dir ann_dir/test --output FoodSAM/semantic_results --SAM_checkpoint  ckpts/sam_vit_l_0b3195.pth --semantic_checkpoint ckpts/SETR_MLA/iter_80000.pth --semantic_config ckpts/SETR_MLA/SETR_MLA_768x768_80k_base.py --eval 
 ```
