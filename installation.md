@@ -39,4 +39,33 @@ e. Finally download three checkpoints, and move them to "ckpts/" folder.
 
 [UNIDET-Unified_learned_OCIM_RS200_6x+2x](https://drive.google.com/file/d/1HvUv399Vie69dIOQX0gnjkCM0JUI9dqI/edit)
 
-For UNIDET and FoodSeg103, the configs are already downloaded in the [configs](configs/) folder
+## Dataset and configs
+For UNIDET and FoodSeg103, the configs are already downloaded in the [configs](configs/) folder. You can also download from their official links.
+
+The default dataset we use is [FoodSeg103](https://github.com/LARC-CMU-SMU/FoodSeg103-Benchmark-v1), other semantic segmentation food datasets like [UECFOODPIXCOMPLETE](https://mm.cs.uec.ac.jp/uecfoodpix/) can also be used. But you should change the  `args.category_txt and args.num_class`. The dataset should be put in the "dataset/"folder.
+
+Your data, configs and ckpt directories should look like this:
+````
+FoodSAM
+-- ckpts
+   |-- SETR_MLA
+   |   |-- iter_80000.pth
+   |-- sam_vit_h_4b8939.pth
+   |-- Unified_learned_OCIM_RS200_6x+2x.pth
+-- configs
+   |-- Base-CRCNN-COCO.yaml
+   |-- Unified_learned_OCIM_RS200_6x+2x.yaml
+   |-- SETR_MLA_768x768_80k_base.py
+-- dataset
+   |-- FoodSeg103
+   |   |-- Images
+   |   |   |-- ann_dir
+   |   |   |-- img_dir  
+-- FoodSAM
+-- mmseg
+-- UNIDET
+   ...
+
+````
+
+
