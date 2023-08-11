@@ -37,6 +37,6 @@ e. Finally download three checkpoints:
 
 [FoodSeg103-SETR-MLA](https://github.com/LARC-CMU-SMU/FoodSeg103-Benchmark-v1)
 
-[UNIDET-Unified_learned_OCIM_RS200_6x+2x](https://github.com/xingyizhou/UniDet/tree/master)
+[UNIDET-Unified_learned_OCIM_RS200_6x+2x](https://github.com/xingyizhou/UniDet/blob/master/docs/REPRODUCE.md)
 
 For UNIDET and FoodSeg103, you also need to download the related configs.
