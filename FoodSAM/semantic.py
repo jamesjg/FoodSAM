@@ -50,7 +50,7 @@ parser.add_argument(
 parser.add_argument(
     "--output",
     type=str,
-    default='FoodSAM/Results/Semantic_Results',
+    default='Output/Semantic_Results',
     help=(
         "Path to the directory where results will be output. Output will be a folder "
     ),
