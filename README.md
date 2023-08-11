@@ -1,7 +1,10 @@
-# FoodSAM
+# FoodSAM: Any Food Segmentation
 
 
-This is the official code for FoodSAM.
+This is the official PyTorch implementation of our paper:
+FoodSAM: Any Food Segmentation.
+
+---
 
 Segment anything Model(SAM) demonstrates significant performance on various segmentation benchmarks, showcasing its impressing zero-shot transfer capabilities on 23 diverse segmentation datasets. However, SAM lacks the class-specific information for each mask. To address the above limitation and explore the zero-shot capability of the SAM for food image segmentation, we propose a novel framework, called FoodSAM. This innovative approach integrates the coarse semantic mask with SAM-generated masks to enhance semantic
 segmentation quality. Besides, it can perform instance segmentation on food images. Furthermore, FoodSAM extends its zero-shot capability to encompass panoptic segmentation by incorporating an object detector, which renders FoodSAM to effectively capture non-food object information. Remarkably, this pioneering framework stands as the first-ever work to achieve instance, panoptic, and promptable segmentation on food images. 
@@ -25,7 +28,7 @@ You can run the model for semantic and panoptic segmentation in a few command li
 python FoodSAM/semantic.py --img_path <path/to/img> --output <path/to/output> --SAM_checkpoint <path/to/SAM_checkpoint> --semantic_checkpoint <path/to/FoodSeg103_checkpoint> --semantic_config <path/to/FoodSeg103_config>
 ```
 ```
-python FoodSAM/panoptic.py --img_path <path/to/img> --output <path/to/output> --SAM_checkpoint <path/to/SAM_checkpoint> --semantic_checkpoint <path/to/FoodSeg103_checkpoint> --semantic_config <path/to/FoodSeg103_config> --detection_config <path/to/detection_config>--opts MODEL.WEIGHTS <path/to/detection_config>
+python FoodSAM/panoptic.py --img_path <path/to/img> --output <path/to/output> --SAM_checkpoint <path/to/SAM_checkpoint> --semantic_checkpoint <path/to/FoodSeg103_checkpoint> --semantic_config <path/to/FoodSeg103_config> --detection_config <path/to/detection_config> --opts MODEL.WEIGHTS <path/to/detection_config>
 ```
 Masks can also be generated for a folder of images by setting `args.data_root and args.img_dir`. Furthermore, by setting `args.eval` to true, the model can output the semantic masks and evaluate the metrics. 
 
@@ -47,11 +50,22 @@ FoodSAM | 46.42 | 84.10 |  58.27
 
 ### UECFOODPIXCOMPLETE
 
-
 | Method | mIou | aAcc | mAcc 
 | :-: | :- | -: | :-: |  
 |deeplabV3+ (baseline)| 65.61 |88.20| 77.56
 FoodSAM | 66.14 |88.47 |78.01
+
+## Acknowledgements
+
+A large part of the code is borrowed from the following wonderful works:
+
+1. [Segmentation Anything](https://github.com/facebookresearch/segment-anything)
+
+2. [UniDet](https://github.com/xingyizhou/UniDet)
+
+3. [FoodSeg103](https://github.com/LARC-CMU-SMU/FoodSeg103-Benchmark-v1)
+
+4. [mmsegmentation](https://github.com/open-mmlab/mmsegmentation)
 
 ## License
 
