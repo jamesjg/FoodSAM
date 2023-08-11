@@ -61,7 +61,7 @@ parser.add_argument(
     default="ckpts/sam_vit_h_4b8939.pth",
     help="The path to the SAM checkpoint to use for mask generation.",
 )
-parser.add_argument('--semantic_config', default="ckpts/SETR_MLA/SETR_MLA_768x768_80k_base.py", help='test config file path of mmseg')
+parser.add_argument('--semantic_config', default="configs/SETR_MLA_768x768_80k_base.py", help='test config file path of mmseg')
 parser.add_argument('--semantic_checkpoint', default="ckpts/SETR_MLA/iter_80000.pth", help='checkpoint file of mmseg')
 parser.add_argument(
     "--model-type",
@@ -105,7 +105,7 @@ parser.add_argument(
 )
 parser.add_argument(
     "--top_k",
-    default=80 ,
+    default=80, help='only the top k SAM masks sorted by SAM will be kept. '
 )
 
 parser.add_argument(
