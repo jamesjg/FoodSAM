@@ -27,6 +27,7 @@ You can run the model for semantic and panoptic segmentation in a few command li
 ```
 python FoodSAM/semantic.py --img_path <path/to/img> --output <path/to/output> 
 ```
+```
 python FoodSAM/panoptic.py --img_path <path/to/img> --output <path/to/output>
 ```
 Masks can also be generated for a folder of images by setting `args.data_root`. Furthermore, by setting `args.eval` to true, the model can output the semantic masks and evaluate the metrics. 
