@@ -36,7 +36,6 @@ python FoodSAM/semantic.py --data_root dataset/FoodSeg103/Images --img_dir img_d
 ```
 python FoodSAM/panoptic.py --data_root dataset/FoodSeg103/Images --img_dir img_dir/test --ann_dir ann_dir/test --output FoodSAM/panoptic_results --SAM_checkpoint  ckpts/sam_vit_l_0b3195.pth --semantic_checkpoint ckpts/SETR_MLA/iter_80000.pth --semantic_config ckpts/SETR_MLA/SETR_MLA_768x768_80k_base.py --detection_config UNIDET/configs/Unified_learned_OCIM_RS200_6x+2x.yaml --opts MODEL.WEIGHTS ckpts/Unified_learned_OCIM_RS200_6x+2x.pth 
 ```
-The default dataset we use is [FoodSeg103](https://github.com/LARC-CMU-SMU/FoodSeg103-Benchmark-v1), other semantic segmentation food datasets like [UECFOODPIXCOMPLETE](https://mm.cs.uec.ac.jp/uecfoodpix/) can also be used. But you should change the  `args.category_txt and args.num_class`.
 
 ## Main Results
 
