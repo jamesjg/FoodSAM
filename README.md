@@ -85,6 +85,9 @@ FoodSAM | 66.14 |88.47 |78.01
 ### panoptic segmentation results
 <img src="assets/panoptic_compare.jpg">
 
+### promptable segmentation results
+<img src="assets/prompt_vis.jpg">
+
 ## Acknowledgements
 
 A large part of the code is borrowed from the following wonderful works:
