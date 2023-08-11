@@ -25,19 +25,18 @@ Please follow our [installation.md](installation.md) to install.
 
 You can run the model for semantic and panoptic segmentation in a few command lines.
 ```
-python FoodSAM/semantic.py --img_path <path/to/img> --output <path/to/output> --SAM_checkpoint <path/to/SAM_checkpoint> --semantic_checkpoint <path/to/FoodSeg103_checkpoint> --semantic_config <path/to/FoodSeg103_config>
+python FoodSAM/semantic.py --img_path <path/to/img> --output <path/to/output> 
 ```
+python FoodSAM/panoptic.py --img_path <path/to/img> --output <path/to/output>
 ```
-python FoodSAM/panoptic.py --img_path <path/to/img> --output <path/to/output> --SAM_checkpoint <path/to/SAM_checkpoint> --semantic_checkpoint <path/to/FoodSeg103_checkpoint> --semantic_config <path/to/FoodSeg103_config> --detection_config <path/to/detection_config> --opts MODEL.WEIGHTS <path/to/detection_config>
-```
-Masks can also be generated for a folder of images by setting `args.data_root and args.img_dir`. Furthermore, by setting `args.eval` to true, the model can output the semantic masks and evaluate the metrics. 
+Masks can also be generated for a folder of images by setting `args.data_root`. Furthermore, by setting `args.eval` to true, the model can output the semantic masks and evaluate the metrics. 
 
 Here are examples of semantic segmentation and panoptic segmentation on the FoodSeg103 dataset:
 ```
-python FoodSAM/semantic.py --data_root dataset/FoodSeg103/Images --img_dir img_dir/test --ann_dir ann_dir/test --output FoodSAM/semantic_results --SAM_checkpoint  ckpts/sam_vit_l_0b3195.pth --semantic_checkpoint ckpts/SETR_MLA/iter_80000.pth --semantic_config ckpts/SETR_MLA/SETR_MLA_768x768_80k_base.py --eval 
+python FoodSAM/semantic.py --data_root dataset/FoodSeg103/Images --output FoodSAM/semantic_results --eval 
 ```
 ```
-python FoodSAM/panoptic.py --data_root dataset/FoodSeg103/Images --img_dir img_dir/test --ann_dir ann_dir/test --output FoodSAM/panoptic_results --SAM_checkpoint  ckpts/sam_vit_l_0b3195.pth --semantic_checkpoint ckpts/SETR_MLA/iter_80000.pth --semantic_config ckpts/SETR_MLA/SETR_MLA_768x768_80k_base.py --detection_config UNIDET/configs/Unified_learned_OCIM_RS200_6x+2x.yaml --opts MODEL.WEIGHTS ckpts/Unified_learned_OCIM_RS200_6x+2x.pth 
+python FoodSAM/panoptic.py --data_root dataset/FoodSeg103/Images --output FoodSAM/panoptic_results
 ```
 
 ## Main Results
