@@ -1,8 +1,12 @@
 ## Installation
 
-The code requires `python==3.7`, as well as `pytorch>=1.8`. Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch dependencies. Installing PyTorch and TorchVision with CUDA support is strongly recommended.
+We have tested the code with `python==3.7` and `pytorch=1.8`, other late versions may also work well. 
+<br>
+Welcome to provide feedback or suggestion for the version list!
+<!-- Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch dependencies. 
+Installing PyTorch and TorchVision with CUDA support is strongly recommended. -->
 
-Install FoodSAM:
+Install FoodSAM with the following steps:
 
 a. Clone the repository locally:
 
@@ -31,7 +35,7 @@ f. other requirements
 pip install -r requirement.txt
 ```
 
-e. Finally download three checkpoints, and move them to "ckpts/" folder.
+e. Finally download three checkpoints, and move them to "ckpts/" folder as described.
 
 [SAM-vit-h](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth)
 
@@ -40,11 +44,12 @@ e. Finally download three checkpoints, and move them to "ckpts/" folder.
 [UNIDET-Unified_learned_OCIM_RS200_6x+2x](https://drive.google.com/file/d/1HvUv399Vie69dIOQX0gnjkCM0JUI9dqI/edit)
 
 ## Dataset and configs
-For UNIDET and FoodSeg103, the configs are already downloaded in the [configs](configs/) folder. You can also download from their official links.
+For UNIDET and FoodSeg103, the configs are already put into the [configs](configs/) folder. 
+You can also download other ckpt and configs from their official links.
 
 The default dataset we use is [FoodSeg103](https://github.com/LARC-CMU-SMU/FoodSeg103-Benchmark-v1), other semantic segmentation food datasets like [UECFOODPIXCOMPLETE](https://mm.cs.uec.ac.jp/uecfoodpix/) can also be used. But you should change the  `args.category_txt and args.num_class`. The dataset should be put in the "dataset/"folder.
 
-Your data, configs and ckpt directories should look like this:
+Your data, configs, and ckpt path should look like this:
 ````
 FoodSAM
 -- ckpts
