@@ -18,28 +18,26 @@ from FoodSAM_tools.predict_semantic_mask import semantic_predict
 
 parser = argparse.ArgumentParser(
     description=(
-        "Runs automatic mask generation on an input image or directory of images, "
-        "and outputs masks as either PNGs or COCO-style RLEs. Requires open-cv, "
-        "as well as pycocotools if saving in RLE format."
+        "Runs SAM automatic mask generation and  instance segmentation on an input image or directory of images, "
     )
 )
 parser.add_argument(
     "--data_root",
     type=str,
-    default='FoodSAM/part_dataset',
+    default='dataset/FoodSeg103/Images',
     help="Path to folder of images and masks.",
 )
 parser.add_argument(
     "--img_dir",
     type=str,
     default='img_dir/test',
-    help="Path to folder of images and masks.",
+    help="Path to img.",
 )
 parser.add_argument(
     "--ann_dir",
     type=str,
     default='ann_dir/test',
-    help="Path to folder of images and masks.",
+    help="Path to ann.",
 )
 
 parser.add_argument(
@@ -53,8 +51,7 @@ parser.add_argument(
     type=str,
     default='FoodSAM/Results/Panoramic_Results',
     help=(
-        "Path to the directory where masks will be output. Output will be either a folder "
-        "of PNGs per image."
+        "Path to the directory where masks will be output. Output will be a folder"
     ),
 )
 parser.add_argument(

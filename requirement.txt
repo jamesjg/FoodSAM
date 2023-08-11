@@ -1,2 +1,9 @@
 opencv-python
 timm
+terminaltables
+matplotlib
+fvcore
+cloudpickle
+omegaconf
+pycocotools
+werkzeug
