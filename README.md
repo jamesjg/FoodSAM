@@ -59,6 +59,10 @@ FoodSAM | 66.14 |88.47 |78.01
 ### semantic segmentation results 
  <img src="assets/semantic.jpg">
  
+---
+
+ <img src="assets/semantic_compare.jpg">
+ 
 ### instance segmentation results
 <img src="assets/instance_compare.jpg">
 
