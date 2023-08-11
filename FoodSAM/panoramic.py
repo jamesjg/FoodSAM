@@ -107,7 +107,7 @@ parser.add_argument(
 
 parser.add_argument(
     "--detection_config",
-    default="UNIDET/configs/Unified_learned_OCIM_RS200_6x+2x.yaml",
+    default="configs/Unified_learned_OCIM_RS200_6x+2x.yaml",
     metavar="FILE",
     help="path to config file",
     )
