@@ -49,7 +49,7 @@ parser.add_argument(
 parser.add_argument(
     "--output",
     type=str,
-    default='FoodSAM/Results/Panoramic_Results',
+    default='Output/Panoramic_Results',
     help=(
         "Path to the directory where masks will be output. Output will be a folder"
     ),
