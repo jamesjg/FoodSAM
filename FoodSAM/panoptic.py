@@ -60,7 +60,7 @@ parser.add_argument(
     default="ckpts/sam_vit_h_4b8939.pth",
     help="The path to the SAM checkpoint to use for mask generation.",
 )
-parser.add_argument('--semantic_config', default="ckpts/SETR_MLA/SETR_MLA_768x768_80k_base.py", help='test config file path of mmseg')
+parser.add_argument('--semantic_config', default="configs/SETR_MLA_768x768_80k_base.py", help='test config file path of mmseg')
 parser.add_argument('--semantic_checkpoint', default="ckpts/SETR_MLA/iter_80000.pth", help='checkpoint file of mmseg')
 parser.add_argument(
     "--model-type",
@@ -107,7 +107,7 @@ parser.add_argument(
 
 parser.add_argument(
     "--detection_config",
-    default="UNIDET/configs/Unified_learned_OCIM_RS200_6x+2x.yaml",
+    default="configs/Unified_learned_OCIM_RS200_6x+2x.yaml",
     metavar="FILE",
     help="path to config file",
     )
