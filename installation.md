@@ -1,0 +1,42 @@
+## Installation
+
+The code requires `python==3.7`, as well as `pytorch>=1.8`. Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch dependencies. Installing PyTorch and TorchVision with CUDA support is strongly recommended.
+
+Install FoodSAM:
+
+a. Clone the repository locally:
+
+```
+git clone https://github.com/jamesjg/FoodSAM.git
+```
+b. Create a conda virtual environment and activate it
+```
+conda create -n FoodSAM python=3.7 -y
+conda activate FoodSAM
+```
+c. Install PyTorch and torchvision following the [official instructions](https://pytorch.org/). Here we use PyTorch 1.8.1 and CUDA 11.1. You may also switch to other version by specifying the version number.
+```
+pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
+```
+d. Install MMCV following the [official instructions](https://mmcv.readthedocs.io/en/latest/#installation). 
+```
+pip install mmcv-full==1.3.0 -f https://download.openmmlab.com/mmcv/dist/cu110/torch1.8.0/index.html
+```
+e. Install SAM following official [SAM installation](https://github.com/facebookresearch/segment-anything).
+```
+pip install git+https://github.com/facebookresearch/segment-anything.git
+```
+f. other requirements
+```
+pip install -r requirement.txt
+```
+
+e. Finally download three checkpoints:
+
+[SAM-vit-h](https://github.com/facebookresearch/segment-anything)
+
+[FoodSeg103-SETR-MLA](https://github.com/LARC-CMU-SMU/FoodSeg103-Benchmark-v1)
+
+[UNIDET-Unified_learned_OCIM_RS200_6x+2x](https://github.com/xingyizhou/UniDet/tree/master)
+
+For UNIDET and FoodSeg103, you also need to download the related configs.
