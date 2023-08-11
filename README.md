@@ -34,13 +34,13 @@ Masks can also be generated for a folder of images by setting `args.data_root`. 
 
 Here are examples of semantic segmentation and panoptic segmentation on the FoodSeg103 dataset:
 ```
-python FoodSAM/semantic.py --data_root dataset/FoodSeg103/Images --output FoodSAM/semantic_results --eval 
+python FoodSAM/semantic.py --data_root dataset/FoodSeg103/Images --output Output/Semantic_Results --eval 
 ```
 ```
-python FoodSAM/panoptic.py --data_root dataset/FoodSeg103/Images --output FoodSAM/panoptic_results
+python FoodSAM/panoptic.py --data_root dataset/FoodSeg103/Images --output Output/Sanoptic_Results
 ```
 
-## Main Results
+## Quantitative results
 
 ### FoodSeg103
 | Method | mIou | aAcc | mAcc 
@@ -54,6 +54,16 @@ FoodSAM | 46.42 | 84.10 |  58.27
 | :-: | :- | -: | :-: |  
 |deeplabV3+ (baseline)| 65.61 |88.20| 77.56
 FoodSAM | 66.14 |88.47 |78.01
+
+## Qualitative results
+### semantic segmentation results 
+ <img src="assets/semantic.jpg">
+ 
+### instance segmentation results
+<img src="assets/instance_compare.jpg">
+
+### panoptic segmentation results
+<img src="assets/panoptic_compare.jpg">
 
 ## Acknowledgements
 
