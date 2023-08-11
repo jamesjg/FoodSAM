@@ -24,7 +24,7 @@ pip install mmcv-full==1.3.0 -f https://download.openmmlab.com/mmcv/dist/cu110/t
 ```
 e. Install SAM following official [SAM installation](https://github.com/facebookresearch/segment-anything).
 ```
-pip install git+https://github.com/facebookresearch/segment-anything.git@6fedd8f
+pip install git+https://github.com/facebookresearch/segment-anything.git@6fdee8f
 ```
 f. other requirements
 ```
