@@ -14,7 +14,7 @@ b. Create a conda virtual environment and activate it
 conda create -n FoodSAM python=3.7 -y
 conda activate FoodSAM
 ```
-c. Install PyTorch and torchvision following the [official instructions](https://pytorch.org/). Here we use PyTorch 1.8.1 and CUDA 11.1. You may also switch to other version by specifying the version number.
+c. Install PyTorch and torchvision following the [official instructions](https://pytorch.org/). Here we use PyTorch 1.8.1 and CUDA 11.1. You may also switch to another version by specifying the version number.
 ```
 pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
 ```
@@ -24,7 +24,7 @@ pip install mmcv-full==1.3.0 -f https://download.openmmlab.com/mmcv/dist/cu110/t
 ```
 e. Install SAM following official [SAM installation](https://github.com/facebookresearch/segment-anything).
 ```
-pip install git+https://github.com/facebookresearch/segment-anything.git
+pip install git+https://github.com/facebookresearch/segment-anything.git@6fedd8f
 ```
 f. other requirements
 ```
