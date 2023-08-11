@@ -31,12 +31,12 @@ f. other requirements
 pip install -r requirement.txt
 ```
 
-e. Finally download three checkpoints:
+e. Finally download three checkpoints, and move them to "ckpts/" folder.
 
-[SAM-vit-h](https://github.com/facebookresearch/segment-anything)
+[SAM-vit-h](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth)
 
-[FoodSeg103-SETR-MLA](https://github.com/LARC-CMU-SMU/FoodSeg103-Benchmark-v1)
+[FoodSeg103-SETR-MLA](https://smu-my.sharepoint.com/personal/xwwu_smu_edu_sg/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fxwwu%5Fsmu%5Fedu%5Fsg%2FDocuments%2Fcheckpoints%2Ezip&parent=%2Fpersonal%2Fxwwu%5Fsmu%5Fedu%5Fsg%2FDocuments&ga=1)
 
-[UNIDET-Unified_learned_OCIM_RS200_6x+2x](https://github.com/xingyizhou/UniDet/blob/master/docs/REPRODUCE.md)
+[UNIDET-Unified_learned_OCIM_RS200_6x+2x](https://drive.google.com/file/d/1HvUv399Vie69dIOQX0gnjkCM0JUI9dqI/edit)
 
-For UNIDET and FoodSeg103, you also need to download the related configs.
+For UNIDET and FoodSeg103, the configs are already downloaded in the [configs](configs/) folder
