@@ -23,21 +23,35 @@ Please follow our [installation.md](installation.md) to install.
 
 ## <a name="GettingStarted"></a>Getting Started
 
+### Demo shell
 You can run the model for semantic and panoptic segmentation in a few command lines.
-```
-python FoodSAM/semantic.py --img_path <path/to/img> --output <path/to/output> 
-```
-```
-python FoodSAM/panoptic.py --img_path <path/to/img> --output <path/to/output>
-```
-Masks can also be generated for a folder of images by setting `args.data_root`. Furthermore, by setting `args.eval` to true, the model can output the semantic masks and evaluate the metrics. 
 
+#### semantic segmentation:
+
+    # semantic segmentation for one img
+    python FoodSAM/semantic.py --img_path <path/to/img> --output <path/to/output> 
+
+    # semantic segmentation for one folder
+    python FoodSAM/semantic.py --data_root <path/to/folder> --output <path/to/output>
+
+#### panoptic segmentation:
+
+    # panoptic segmentation for one img
+    python FoodSAM/panoptic.py --img_path <path/to/img> --output <path/to/output>
+
+    # panoptic segmentation for one folder
+    python FoodSAM/panoptic.py --data_root <path/to/folder> --output <path/to/output>
+
+
+
+### Evaluation shell
+Furthermore, by setting `args.eval` to true, the model can output the semantic masks and evaluate the metrics. 
 Here are examples of semantic segmentation and panoptic segmentation on the FoodSeg103 dataset:
 ```
 python FoodSAM/semantic.py --data_root dataset/FoodSeg103/Images --output Output/Semantic_Results --eval 
 ```
 ```
-python FoodSAM/panoptic.py --data_root dataset/FoodSeg103/Images --output Output/Sanoptic_Results
+python FoodSAM/panoptic.py --data_root dataset/FoodSeg103/Images --output Output/Panoptic_Results
 ```
 
 ## Quantitative results
@@ -56,7 +70,9 @@ FoodSAM | 46.42 | 84.10 |  58.27
 FoodSAM | 66.14 |88.47 |78.01
 
 ## Qualitative results
+
 ### semantic segmentation results 
+
  <img src="assets/semantic.jpg">
  
 ---
