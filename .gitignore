@@ -1,5 +1,5 @@
 __pycache__/
-FoodSAM/Results
+Output/
 ckpts/SETR_MLA/*
 !ckpts/SETR_MLA/.gitkeep
 ckpts/*
