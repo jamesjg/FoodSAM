@@ -110,6 +110,13 @@ The model is licensed under the [Apache 2.0 license](LICENSE).
 If you want to cite our work, please use this:
 
 ```
-@article
+@misc{lan2023foodsam,
+      title={FoodSAM: Any Food Segmentation}, 
+      author={Xing Lan and Jiayi Lyu and Hanyu Jiang and Kun Dong and Zehai Niu and Yi Zhang and Jian Xue},
+      year={2023},
+      eprint={2308.05938},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 
 ```
