@@ -4,6 +4,8 @@
 This is the official PyTorch implementation of our paper:
 FoodSAM: Any Food Segmentation.
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/foodsam-any-food-segmentation/semantic-segmentation-on-foodseg103)](https://paperswithcode.com/sota/semantic-segmentation-on-foodseg103?p=foodsam-any-food-segmentation)
+
 ---
 
 Segment anything Model(SAM) demonstrates significant performance on various segmentation benchmarks, showcasing its impressing zero-shot transfer capabilities on 23 diverse segmentation datasets. However, SAM lacks the class-specific information for each mask. To address the above limitation and explore the zero-shot capability of the SAM for food image segmentation, we propose a novel framework, called FoodSAM. This innovative approach integrates the coarse semantic mask with SAM-generated masks to enhance semantic
