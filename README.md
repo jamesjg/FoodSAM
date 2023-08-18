@@ -68,7 +68,7 @@ FoodSAM | 46.42 | 84.10 |  58.27
 
 | Method | mIou | aAcc | mAcc 
 | :-: | :- | -: | :-: |  
-|deeplabV3+ (baseline)| 65.61 |88.20| 77.56
+|[deeplabV3+ (baseline)](https://github.com/HitBadTrap/Foodseg-uecfoodpix)| 65.61 |88.20| 77.56
 FoodSAM | 66.14 |88.47 |78.01
 
 ## Qualitative results
