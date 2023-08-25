@@ -43,6 +43,8 @@ e. Finally download three checkpoints, and move them to "ckpts/" folder as descr
 
 [UNIDET-Unified_learned_OCIM_RS200_6x+2x](https://drive.google.com/file/d/1HvUv399Vie69dIOQX0gnjkCM0JUI9dqI/edit)
 
+If the above links are not working, you also can download them in [Baidu Disk](https://pan.baidu.com/s/1o1w_Vejrtd7rvWVorSQZfg?pwd=pyyk) (code:`pyyk`).
+
 ## Dataset and configs
 For UNIDET and FoodSeg103, the configs are already put into the [configs](configs/) folder. 
 You can also download other ckpt and configs from their official links.
