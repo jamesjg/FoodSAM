@@ -12,6 +12,7 @@ Segment anything Model(SAM) demonstrates significant performance on various segm
 segmentation quality. Besides, it can perform instance segmentation on food images. Furthermore, FoodSAM extends its zero-shot capability to encompass panoptic segmentation by incorporating an object detector, which renders FoodSAM to effectively capture non-food object information. Remarkably, this pioneering framework stands as the first-ever work to achieve instance, panoptic, and promptable segmentation on food images. 
 
 [[`Paper`](https://arxiv.org/abs/2308.05938)] 
+[[`Project`]](https://starhiking.github.io/FoodSAM_Page/)
 
 ![FoodSAM architecture](assets/foodsam.jpg)
 
