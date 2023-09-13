@@ -74,6 +74,10 @@ FoodSAM | 66.14 |88.47 |78.01
 
 ## Qualitative results
 
+### cross domain results
+
+ <img src="assets/crossdomain.png">
+
 ### semantic segmentation results 
 
  <img src="assets/semantic.jpg">
