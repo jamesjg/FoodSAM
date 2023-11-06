@@ -11,8 +11,9 @@ FoodSAM: Any Food Segmentation.
 Segment anything Model(SAM) demonstrates significant performance on various segmentation benchmarks, showcasing its impressing zero-shot transfer capabilities on 23 diverse segmentation datasets. However, SAM lacks the class-specific information for each mask. To address the above limitation and explore the zero-shot capability of the SAM for food image segmentation, we propose a novel framework, called FoodSAM. This innovative approach integrates the coarse semantic mask with SAM-generated masks to enhance semantic
 segmentation quality. Besides, it can perform instance segmentation on food images. Furthermore, FoodSAM extends its zero-shot capability to encompass panoptic segmentation by incorporating an object detector, which renders FoodSAM to effectively capture non-food object information. Remarkably, this pioneering framework stands as the first-ever work to achieve instance, panoptic, and promptable segmentation on food images. 
 
-[[`Paper`](https://arxiv.org/abs/2308.05938)] 
+[[`Arxiv`](https://arxiv.org/abs/2308.05938)] 
 [[`Project`]](https://starhiking.github.io/FoodSAM_Page/)
+[[`IEEE TMM`]](https://ieeexplore.ieee.org/document/10306316)
 
 ![FoodSAM architecture](assets/foodsam.jpg)
 
@@ -115,6 +116,17 @@ The model is licensed under the [Apache 2.0 license](LICENSE).
 If you want to cite our work, please use this:
 
 ```
+@ARTICLE{10306316,
+  author={Lan, Xing and Lyu, Jiayi and Jiang, Hanyu and Dong, Kun and Niu, Zehai and Zhang, Yi and Xue, Jian},
+  journal={IEEE Transactions on Multimedia}, 
+  title={FoodSAM: Any Food Segmentation}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-14},
+  doi={10.1109/TMM.2023.3330047}
+}
+
 @misc{lan2023foodsam,
       title={FoodSAM: Any Food Segmentation}, 
       author={Xing Lan and Jiayi Lyu and Hanyu Jiang and Kun Dong and Zehai Niu and Yi Zhang and Jian Xue},
