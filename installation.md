@@ -39,7 +39,7 @@ e. Finally download three checkpoints, and move them to "ckpts/" folder as descr
 
 [SAM-vit-h](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth)
 
-[FoodSeg103-SETR-MLA](https://smu-my.sharepoint.com/personal/xwwu_smu_edu_sg/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fxwwu%5Fsmu%5Fedu%5Fsg%2FDocuments%2Fcheckpoints%2Ezip&parent=%2Fpersonal%2Fxwwu%5Fsmu%5Fedu%5Fsg%2FDocuments&ga=1)
+[FoodSeg103-SETR-MLA](https://research.larc.smu.edu.sg/downloads/datarepo/FoodSeg103.zip)
 
 [UNIDET-Unified_learned_OCIM_RS200_6x+2x](https://drive.google.com/file/d/1HvUv399Vie69dIOQX0gnjkCM0JUI9dqI/edit)
 
